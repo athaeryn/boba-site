@@ -1,3 +1,8 @@
+require 'redcarpet'
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -38,5 +43,5 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 end
